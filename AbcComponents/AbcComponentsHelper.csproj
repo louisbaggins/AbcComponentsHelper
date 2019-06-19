@@ -3,6 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <LangVersion>7.1</LangVersion>
+    <PackageProjectUrl />
+    <RepositoryUrl>https://github.com/louisbaggins/AbcComponentsHelper</RepositoryUrl>
+    <PackageTags>chatbot, abc, listpicker, timepicker, richlink</PackageTags>
+    <Company />
+    <Authors>LouisBaggins</Authors>
   </PropertyGroup>
 
   <ItemGroup>

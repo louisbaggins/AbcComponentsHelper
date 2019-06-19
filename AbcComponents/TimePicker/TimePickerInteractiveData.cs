@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using System.Text;
+﻿using System.Runtime.Serialization;
 
 namespace AbcComponentsHelper.TimePicker
 {
@@ -43,5 +40,4 @@ namespace AbcComponentsHelper.TimePicker
         {
         }
     }
-
 }

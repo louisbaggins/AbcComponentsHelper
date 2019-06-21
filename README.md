@@ -78,3 +78,40 @@ var sections = new List<Section>();
                 items.Add(new Items("ItemTitle2", "ItemImageIdentifier2", "itemImage2", order+1));
                 var listPicker = new ListPickerDocument("ReceveidMessageTitle", "ReceveidMessageSubTitle", items, multipleSelection));
 ```
+
+
+## 3. Properties of a TimePicker
+
+- [BaseMessage](https://developer.apple.com/documentation/businesschatapi/baseinteractivemessage)
+- [TimePickerInteractiveData: (Obligatory)](https://developer.apple.com/documentation/businesschatapi/timepickermessage/interactivedata)
+- [TimePickerData : (Obligatory)](https://developer.apple.com/documentation/businesschatapi/timepickerdata)
+- [EventItem: (Obligatory)](https://developer.apple.com/documentation/businesschatapi/eventitem)
+- [Location](https://developer.apple.com/documentation/businesschatapi/locationitem)
+- [TimeSlots(Obligatory)](https://developer.apple.com/documentation/businesschatapi/timeitem)
+- [Image](https://developer.apple.com/documentation/businesschatapi/imageitem)
+- [ReceivedMessage](https://developer.apple.com/documentation/businesschatapi/receivedmessage)
+- [ReplyMessage](https://developer.apple.com/documentation/businesschatapi/replymessage)
+
+## 4. Sending a Time Picker
+
+You'll have to initialize receivedMessage as you did in listpicker(replyMessage is optional in both cases), but using TimePickerReceivedMessage and TimePickerReplyMessage.
+
+But instead of a collection of items you'll have a collection of TimeSlots, as you can see down bellow:
+
+```csharp
+ var timeSlots = new List<TimeSlots>();
+                    timeSlots.Add(new TimeSlots(duration,
+                        time.ToString($"yyyy-MM-ddTHH:mm{timezonestring}"),
+                         timeIdentifier));                
+```
+
+Then you can create a TimePicker:
+
+```csharp
+var timePickerDocument = new TimePickerDocument(
+                new TimePickerInteractiveData(
+                    new TimePickerData("1.0",
+                    new Event(string.Empty, "Agendamento", timeSlots)),
+                    receivedMessage));
+```
+

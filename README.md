@@ -6,7 +6,7 @@ https://www.nuget.org/packages/AbcComponentsHelper/
 
 To install the package:
 
-PM> Install-Package AbcComponentsHelper -Version 1.0.0
+PM> Install-Package AbcComponentsHelper 
 
 ### This library is implemented for the following Messaging Channels:
 

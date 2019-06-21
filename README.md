@@ -32,6 +32,7 @@ Apple Business Chat
 - [ReceivedMessage](https://developer.apple.com/documentation/businesschatapi/receivedmessage)
 - [ReplyMessage](https://developer.apple.com/documentation/businesschatapi/replymessage)
 
+![alt text](https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/i4t1o/i4t1o.png)
 
 ## 2. Sending a listPicker
 
@@ -92,6 +93,8 @@ var sections = new List<Section>();
 - [ReceivedMessage](https://developer.apple.com/documentation/businesschatapi/receivedmessage)
 - [ReplyMessage](https://developer.apple.com/documentation/businesschatapi/replymessage)
 
+![alt text](https://s3-sa-east-1.amazonaws.com/i.imgtake.takenet.com.br/iiukr/iiukr.png)
+
 ## 4. Sending a Time Picker
 
 You'll have to initialize receivedMessage as you did in listpicker(replyMessage is optional in both cases), but using TimePickerReceivedMessage and TimePickerReplyMessage.
@@ -114,4 +117,5 @@ var timePickerDocument = new TimePickerDocument(
                     new Event(string.Empty, "Agendamento", timeSlots)),
                     receivedMessage));
 ```
+
 

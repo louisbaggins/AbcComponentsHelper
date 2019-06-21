@@ -19,7 +19,6 @@ PS: Almost all these examples accepts an extra/optional argument that sets the o
 Channels:
 Apple Business Chat
 
-Properties of listpicker:
 BaseMessage: https://developer.apple.com/documentation/businesschatapi/basemessage
 InteractiveData: (Obligatory) https://developer.apple.com/documentation/businesschatapi/listpickermessage/interactivedata
 Data : (Obligatory) https://developer.apple.com/documentation/businesschatapi/listpickerdata

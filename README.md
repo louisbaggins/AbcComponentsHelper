@@ -41,7 +41,7 @@ First of all, you create a array of items(or pass items as params[])
  ```csharp
  var items = new List<ListPickerItem>();               
  //Defining Items
- items.Add(new ListPickerItem("style", "itemTitle", "imageIdentifier", order, itemIdentifier));
+ items.Add(new ListPickerItem("style", "itemTitle", "imageIdentifier", order, "itemIdentifier"));
  ``` 
  Then you create the array of images(if there's any image):
   ```csharp
@@ -54,7 +54,17 @@ First of all, you create a array of items(or pass items as params[])
   ```csharp
  imageArray.Add(new Image("ImageIdentifier", byte[] image));
  ``` 
- 
- 
+ Then you create receveid message item:
+ ```csharp
+  var receivedMessage = new ReceivedMessage("style", "Title", "Subtitle", "ImageIdentifier");
+ ```
 
-###
+Finally, crating listpicker:
+```csharp
+var sections = new List<Section>();
+            sections.Add(new Section(items.ToArray()));
+            var listPickerDocument = new ListPickerDocument(
+                new InteractiveData(
+                    new Data(sections),
+                    receivedMessage));
+ ```

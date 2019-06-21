@@ -69,7 +69,9 @@ var sections = new List<Section>();
                     receivedMessage));
  ```
  
- Another way o create a listpicker:
+ 
+ 
+ Another way of create a listpicker:
  ```csharp
  var items = new List<Items>();
                 items.Add(new Items("ItemTitle", "ItemImageIdentifier", "itemImage", order));

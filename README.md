@@ -13,9 +13,10 @@ PM> Install-Package AbcComponentsHelper -Version 1.0.0
 - Apple Business Chat
 - Blip Chat
 
-Using Examples:
+### Using Examples:
 
 PS: Almost all these examples accepts an extra/optional argument that sets the order or style of the element.
+PS2: Almost all these examples that uses a collection also accepts to be passed as params[].
 
 ## 1. Properties of a listpicker
 Channels:
@@ -36,4 +37,24 @@ Apple Business Chat
 
 Example:
 
-Code:
+First of all, you create a array of items(or pass items as params[])
+ ```csharp
+ var items = new List<ListPickerItem>();               
+ //Defining Items
+ items.Add(new ListPickerItem("style", "itemTitle", "imageIdentifier", order, itemIdentifier));
+ ``` 
+ Then you create the array of images(if there's any image):
+  ```csharp
+ var imageArray = new List<Image>();               
+ //Defining Items
+ imageArray.Add(new Image("ImageIdentifier", Base64Image));
+ ``` 
+ or 
+ 
+  ```csharp
+ imageArray.Add(new Image("ImageIdentifier", byte[] image));
+ ``` 
+ 
+ 
+
+###

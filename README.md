@@ -10,14 +10,14 @@ PM> Install-Package AbcComponentsHelper -Version 1.0.0
 
 This library is implemented for the following Messaging Channels:
 
-Apple Business Chat
-Blip Chat
+- Apple Business Chat
+- Blip Chat
 
 Using Examples:
 
 PS: Almost all these examples accepts an extra/optional argument that sets the order or style of the element.
 
-**1. Properties of a listpicker**
+##**1. Properties of a listpicker**
 Channels:
 Apple Business Chat
 

@@ -59,7 +59,7 @@ First of all, you create a array of items(or pass items as params[])
   var receivedMessage = new ReceivedMessage("style", "Title", "Subtitle", "ImageIdentifier");
  ```
 
-Finally, crating listpicker:
+Finally, creating listpicker:
 ```csharp
 var sections = new List<Section>();
             sections.Add(new Section(items.ToArray()));
@@ -68,3 +68,11 @@ var sections = new List<Section>();
                     new Data(sections),
                     receivedMessage));
  ```
+ 
+ Another way o create a listpicker:
+ ```csharp
+ var items = new List<Items>();
+                items.Add(new Items("ItemTitle", "ItemImageIdentifier", "itemImage", order));
+                items.Add(new Items("ItemTitle2", "ItemImageIdentifier2", "itemImage2", order+1));
+                var listPicker = new ListPickerDocument("ReceveidMessageTitle", "ReceveidMessageSubTitle", items, multipleSelection));
+```

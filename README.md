@@ -1,4 +1,4 @@
-# AbcComponentsHelper
+# Apple Business chat Components Helper
 Components of ABC channel
 Nuget Package:
 
